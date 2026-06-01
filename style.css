@@ -381,9 +381,4 @@ footer h3{
     .card, .owner-card, .team-card {
         width: 90%;
     }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
 }
