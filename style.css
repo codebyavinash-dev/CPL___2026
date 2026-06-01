@@ -349,3 +349,41 @@ footer h3{
     margin-bottom: 30px;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content h3 {
+        font-size: 18px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .card, .owner-card, .team-card {
+        width: 90%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
