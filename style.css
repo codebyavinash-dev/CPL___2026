@@ -382,3 +382,20 @@ footer h3{
         width: 90%;
     }
 }
+
+@media (max-width:768px) {
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+    .hero_content h2 {
+        font-size: 28px;
+    }
+    .card {
+        width: 100%;
+    }
+
+    nav ui {
+        padding: 10px 0;
+    }
+}
