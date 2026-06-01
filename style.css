@@ -1,0 +1,351 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:black;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+nav a{
+    text-decoration: none;
+    color: gold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: white;
+}
+button{
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+section h2{
+    color: gold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#111;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:gold;
+}
+
+.hero{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url("images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-content h2{
+    animation: fadein 2s ease;
+    font-size:70px;
+    color:gold;
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content h3{
+    margin-top:15px;
+    font-size:30px;
+}
+
+.hero-content p{
+    margin-top:20px;
+    font-size:22px;
+}
+
+.closed-btn{
+    background: red;
+    color: white;
+}
+
+.update-section{
+    text-align: center;
+    padding: 50px 20px;
+}
+.update-section h2{
+    color: gold;
+}
+
+.info{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#111;
+
+    border:2px solid gold;
+
+    width:250px;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    box-shadow: 0 0 15px rgba(255,215,0,0.3);
+}
+
+.card:hover{
+    box-shadow: 0 0 25px rgba(255,215,0,0.6);
+}
+.card h2{
+    color:gold;
+    font-size:40px;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+.owners{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.owners h2{
+    color:gold;
+    margin-bottom:40px;
+}
+
+.owners-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.owner-card{
+    width:250px;
+    background:#111;
+    border:2px solid gold;
+    border-radius:10px;
+    overflow:hidden;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(255,215,0,0.3);
+}
+
+.owner-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255,215,0,0.6);
+}
+
+.owner-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.owner-card h3{
+    padding:15px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.countdown-section{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.countdown-section h2{
+    color:gold;
+    margin-bottom:40px;
+}
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.time-box{
+    background:#111;
+    border:2px solid gold;
+    padding:25px;
+    width:150px;
+    border-radius:10px;
+    box-shadow: 0 0 15px rgba(255,215,0,0.3);
+}
+
+.time-box:hover{
+    box-shadow: 0 0 25px rgba(255,215,0,0.6);
+}
+
+.time-box span{
+    font-size:40px;
+    font-weight:bold;
+    color:gold;
+}
+
+.time-box p{
+    margin-top:10px;
+}
+
+.timeline{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.timeline h2{
+    color:gold;
+    margin-bottom:40px;
+}
+
+.timeline-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.timeline-box{
+    width:250px;
+    background:#111;
+    border:2px solid gold;
+    border-radius:10px;
+    padding:25px;
+    box-shadow: 0 0 15px rgba(255,215,0,0.3);
+}
+
+.timeline-box:hover{
+    box-shadow: 0 0 25px rgba(255,215,0,0.6);
+}
+
+.timeline-box h3{
+    color:gold;
+    margin-bottom:10px;
+}
+
+.teams{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.teams h2{
+    color:gold;
+    margin-bottom:20px;
+}
+
+.teams-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top: 20px;
+}
+
+.team-card{
+    width:250px;
+    background:#111;
+    border:2px solid gold;
+    border-radius:10px;
+    padding:25px;
+    transition:0.3s;
+    box-shadow: 0 0 15px rgba(255,215,0,0.3);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.team-card:hover{
+    transform:translateY(-10px);
+    box-shadow: 0 0 25px rgba(255,215,0,0.6);
+}
+
+.team-card h3{
+    color:gold;
+}
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:80px;
+}
+
+footer h3{
+    color:gold;
+    margin-bottom:15px;
+}
+
+.player{
+    background: #000;
+    border: 1px solid gold;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#auctionStatus{
+    color: gold;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
